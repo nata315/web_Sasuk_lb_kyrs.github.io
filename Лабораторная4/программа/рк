@@ -1,0 +1,48 @@
+<!--Описать и протестировать функцию, находящую все уникальные 
+    изображения на странице и выводящую их список в новом окне (уникальные URL изображений).-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Рейтинг контроль</title>   
+   
+    <script src=".js" defer></script>
+</head>
+<body>
+    <img src="1" alt="img1">
+    <img src="2" alt="img2">
+    <img src="3" alt="img3">
+    <img src="4" alt="img4">
+    <img src="5" alt="img5">
+    <img src="6" alt="img6">
+
+    <button id="filter">только уникальные ссылки</button>
+    
+    <script>
+        let all_img_src = document.querySelectorAll("img").src;
+        function findImg(mas_img){
+            const new_list = mas_img.filter(src => src && src.trim() !== '') //убирает пустые URL
+            .filter((src, index, array) => array.indexOf(src) === index); //фильтруем только уникальные
+
+            let img_list = "<ul> ";
+            new_list.array.forEach(element => {img_list += "<li>"+element+"</li>"});
+            img_list += "</ul>";
+            console.log(img_list);
+
+            const new_window = window.open('', 'уникальные ссылки');
+			new_window.document.write(`
+				<html>
+				<head>
+					<title>уникальные ссылки</title>
+				</head>
+				<body>
+					<h3>${img_list}</h3>
+				</body>
+				</html>
+			`);
+			new_window.document.close();
+
+        }
+    </script>
+</body>
