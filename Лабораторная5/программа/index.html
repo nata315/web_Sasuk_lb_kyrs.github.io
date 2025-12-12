@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Космос: тайны Вселенной</title>
+    
+   <!-- Подключение Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+     <!-- Иконка сайта -->
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=UeQWtGJqSYF_&format=png&color=000000" type="image/x-icon" type="image/x-icon">
+    
+    <!-- Подключение кастомных стилей -->
+    <link rel="stylesheet" href="css.css">
+   
+    <!--<script src="js.js" defer></script>-->
+    <script src="5lb.js" defer></script>
+
+</head>
+
+<body>
+    
+ <!-- Основное содержимое -->
+    <main class="container mt-5 pt-4">
+            <!-- Фиксированный хедер -->
+        <header class="fixed-top  bg-opacity-75  py-3">
+            <!-- Контейнер для ограничения ширины контента -->
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                    <!-- Логотип и название -->
+                    <div ><!-- class="d-flex align-items-center mb-3 mb-md-0"-->
+                        <img class="logo" src="https://img.icons8.com/?size=100&id=S5T3WHllAxQd&format=png&color=000000" type="image/x-icon" alt="Логотип" width="60" class="me-3">
+                        <h1 class="h4 mb-0">Космос: тайны Вселенной</h1>
+                    </div>
+                    <!-- Навигационное меню -->
+                    <nav>
+                        <ul class="nav ">
+                            <li class="nav-item1"><a  href="#article1" class="nav-link nav-link-article1">Первый раздел</a></li>
+                                
+                            <li class="nav-item2"><a  href="#article2" class="nav-link nav-link-article2">Второй раздел</a></li>
+                                
+                            <li class="nav-item3"><a  href="#article3" class="nav-link nav-link-article3">Третий раздел</a></li>
+                                
+                        </ul>
+                        <div id="lower-nav">
+                            <div class="article1">
+                                    <a  href="#section1" class="nav-link nav-link1">Общая информация</a>
+                                    <a  href="#section2" class="nav-link nav-link2">Статьи о космосе</a>
+                            </div>
+                            <div class="article2">
+                                    <a  href="#section3" class="nav-link nav-link3">Звезды и созвездия</a>
+                                    <a  href="#section4" class="nav-link nav-link4">Галактики</a>
+                            </div>
+                            <div class="article3">
+                                    <a  href="#section5" class="nav-link nav-link5">Космические явления</a>
+                                    <a  href="#section6" class="nav-link nav-link6">Форма обратной связи</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!--<ul class="nav nav-pills">
+                            <li class="nav-item"><a  href="#section1" class="nav-link">Общая информация</a></li>
+                            <li class="nav-item"><a  href="#section2" class="nav-link">Статьи о космосе</a></li>
+                            <li class="nav-item"><a  href="#section3" class="nav-link">Звезды и созвездия</a></li>
+                            <li class="nav-item"><a  href="#section4" class="nav-link">Галактики</a></li>
+                            <li class="nav-item"><a  href="#section5" class="nav-link">Космические явления</a></li>
+                            <li class="nav-item"><a  href="#section6" class="nav-link">Форма обратной связи</a></li>
+                        </ul>-->
+         <!-- Секция выбора цвета -->
+        <section class="row mb-4 g-3">
+            <div class="col-md-4">
+                <label class="form-label">Выберите цвет текста:</label>
+                <input type="color" id="text-color" value="#000000" class="form-control form-control-color">
+            </div>
+            <div class="col-md-4">
+                <label class="form-label">Выберите цвет фона:</label>
+                <input type="color" id="bg-color" value="#ffffff" class="form-control form-control-color">
+            </div>
+            <div class="col-md-4 d-flex align-items-end">
+                <button id="reset-button" class="btn btn-outline-secondary w-100">Сбросить цвета</button>
+            </div>
+
+        </section>
+
+
+       <!-- Секция с таблицей -->
+        <section class="mb-5">
+            <h2 class="mb-4">Таблица</h2>
+            <div class="table-responsive">
+                 <!-- Стили Bootstrap для таблицы -->
+                <table class="myTable table table-bordered table-hover">
+                    <!-- Темный заголовок таблицы -->
+                    <thead class="table-dark">
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table-primary">str 1</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">str 2</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">str 3</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                        </tr>
+                        <tr>
+                            <td class="table-primary">str 4</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                            <td>&times</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <article id="article1">
+        <!-- Первая секция -->
+        <section id="section1" class="mb-5">
+             <!-- Карточка Bootstrap -->
+                <div class="card-body">
+                    <h2 class="card-title">Добро пожаловать!</h2>
+                    <p class="card-text">Добро пожаловать на сайт "Космос: тайны Вселенной"! Здесь вы найдете увлекательные статьи, потрясающие фотографии, загадочные звуки космоса и захватывающие видео о нашей необъятной Вселенной.</p>
+                </div>
+            
+        </section>
+
+            <section id="section2" class="mb-5" >
+                <div>
+                    <aside>
+                        <button class="btn btn-outline-light">Меркурий</button>
+                        <button class="btn btn-outline-light">Венера</button>
+                        <button class="btn btn-outline-light">Земля</button>
+                        <button class="btn btn-outline-light">Марс</button>
+                        <button class="btn btn-outline-light">Юпитер</button>
+                        <button class="btn btn-outline-light">Сатурн</button>
+                        <button class="btn btn-outline-light">Уран и Нептун</button>
+                    </aside>
+<!--
+                    <div id="overlay"></div>
+
+                    <div class="window" id="popupDialog1">
+                        <p>Меркурий - самая маленькая и ближайшая к Солнцу планета. Год длится всего 88 дней. Имеет сильно кратерированную поверхность.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog2">
+                        <p>Венера - вторая планета от Солнца. Самая горячая планета с температурой до 470°C. Имеет плотную атмосферу из углекислого газа.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog3">
+                        <p>Земля - третья планета от Солнца. Единственная известная планета с жизнью. 71% поверхности покрыт водой.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog4">
+                        <p>Марс - четвертая планета, известная как "Красная планета". Имеет самую высокую гору в Солнечной системе - Олимп (21 км).</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog5">
+                        <p>Юпитер - крупнейшая планета Солнечной системы. Газовый гигант с Большим красным пятном - гигантским штормом.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog6">
+                        <p>Сатурн - шестая планета, известная своими кольцами из льда и камня. Имеет 82 подтвержденных спутника.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog7">
+                        <p>Уран - седьмая планета, ледяной гигант. Вращается "на боку" - ось вращения наклонена на 98 градусов.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                    <div class="window" id="popupDialog8">
+                        <p>Нептун - восьмая и самая ветреная планета. Скорость ветра достигает 2100 км/ч. Открыт математическими расчетами.</p>
+                        <button class="btn btn-outline-danger close-btn">
+                            закрыть
+                        </button>
+                    </div>
+                -->
+                    <div class="card-body">
+                        <h2 class="card-title">Статьи о космосе</h2>
+                        <ul class="list-group list-group-flush">
+                            <li >Меркурий: Самая близкая к Солнцу планета</li>
+                            <li >Венера: Планета с адскими условиями</li>
+                            <li >Земля: Наш дом</li>
+                            <li >Марс: Красная планета</li>
+                            <li >Юпитер: Гигант Солнечной системы</li>
+                            <li >Сатурн: Властелин колец</li>
+                            <li >Уран и Нептун: Ледяные гиганты</li>
+                        </ul>
+                    </div>
+
+                     
+                </div>
+                    
+            </section>
+
+        </article>
+
+            <!--<figure class="mb-5 text-center">
+                <img src="https://i.pinimg.com/originals/c6/7c/99/c67c9904fe72ab1c158d8308d73d17da.jpg" alt="Космическое изображение" class="img-fluid rounded">
+                <figcaption class="mt-2 text-muted">Космическое изображение</figcaption>
+            </figure>-->
+        <article id="article2">
+            <section id="section3" class="mb-5">
+                    <div class="card-body">
+                        <h2 class="card-title">Звезды и созвездия</h2>
+                        <ul >
+                            <li >Как рождаются и умирают звезды?</li>
+                            <li >Самые яркие звезды на ночном небе</li>
+                            <li >Легенды и мифы о созвездиях</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <!--<figure class="mb-5 text-center">
+                <img src="https://i.pinimg.com/originals/8f/96/ef/8f96ef1fe7fd26ae063580fcccdfe86a.jpg" alt="Звезды и созвездия" class="img-fluid rounded">
+                <figcaption class="mt-2 text-muted">Звезды и созвездия</figcaption>
+            </figure>-->
+
+            <section id="section4" class="mb-5">
+                    <div class="card-body">
+                        <h2 class="card-title">Галактики</h2>
+                        <ul >
+                            <li >Что такое галактики и сколько их во Вселенной?</li>
+                            <li >Млечный Путь: наша галактика</li>
+                            <li >Андромеда: соседняя галактика</li>
+                        </ul>
+                    </div>
+            </section>
+        </article>
+            <!--<figure class="mb-5 text-center">
+                <img src="https://avatars.mds.yandex.net/i?id=f0c92ad32b7076f9be3f88b3a7e5eb5f_l-13059231-images-thumbs&n=13" alt="Галактики" class="img-fluid rounded mb-3">
+                <audio controls class="w-100">
+                    <source src="C:\Users\natal\Downloads\space-transmission_zk0vff4u.mp3" type="audio/mpeg">
+                    Ваш браузер не поддерживает аудио элемент.
+                </audio>
+                <figcaption class="mt-2 text-muted">Галактики и космические звуки</figcaption>
+            </figure>-->
+
+        <article id="article3">
+            <section id="section5" class="mb-5">
+                    <div class="card-body">
+                        <aside>
+                        <button class="btn btn-outline-light">Черные дыры</button>
+                        <button class="btn btn-outline-light">Звезды</button>
+                        <button class="btn btn-outline-light">Космические взрывы</button>
+                    </aside>
+                        <h2 class="card-title">Космические явления</h2>
+                        <ul class="list-group-2">
+                            <li >Черные дыры: что это и почему они так загадочны?</li>
+                            <li >Нейтронные звезды и пульсары</li>
+                            <li >Космические взрывы: сверхновые и гамма-всплески</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <!--<figure class="mb-5 text-center">
+                <div class="ratio ratio-16x9">
+                    <video controls autoplay loop muted class="rounded">
+                        <source src="https://yandex.ru/video/preview/9477811896284244362" type="video/mp4">
+                        Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                <figcaption class="mt-2 text-muted">Видео галактики</figcaption>
+            </figure>-->
+
+        <!-- Форма опроса -->
+        <section id="section6" class="mb-5">
+            <section class="survey-container mb-5">
+                <h3>Форма обратной связи </h3>
+                <div class="card">
+                    <div class="card-body">
+                        <form action="/submit" method="post" class="needs-validation" novalidate>
+    
+                            <div class="mb-3">
+                                <label for="age" class="form-label">Ваш возраст:</label>
+                                <input type="number" id="age" name="age" min="0" max="100" class="form-control" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="gender" class="form-label">Выберите пол:</label>
+                                <select id="gender" name="gender" class="form-select" required>
+                                    <option value="" selected disabled>Выберите...</option>
+                                    <option value="male">Мужской</option>
+                                    <option value="female">Женский</option>
+                                </select>
+                            </div>
+                            
+                            <fieldset class="mb-3">
+                                <legend class="form-label">Какая тема о космосе вас интересует больше всего?</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest" id="planets" value="planets" required>
+                                    <label class="form-check-label" for="planets">Планеты Солнечной системы</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest" id="stars" value="stars">
+                                    <label class="form-check-label" for="stars">Звезды и созвездия</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest" id="galaxies" value="galaxies">
+                                    <label class="form-check-label" for="galaxies">Галактики и черные дыры</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="interest" id="phenomena" value="phenomena">
+                                    <label class="form-check-label" for="phenomena">Космические явления</label>
+                                </div>
+                            </fieldset>
+                            
+                            <fieldset class="mb-3">
+                                <legend class="form-label">Хотели бы вы больше узнать о:</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="life" name="learn" value="life">
+                                    <label class="form-check-label" for="life">Возможности жизни на других планетах</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="research" name="learn" value="research">
+                                    <label class="form-check-label" for="research">Будущем космических исследований</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="tech" name="learn" value="tech">
+                                    <label class="form-check-label" for="tech">Технологиях для изучения космоса</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="history" name="learn" value="history">
+                                    <label class="form-check-label" for="history">Истории освоения космоса человеком</label>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="mb-3">
+                                <legend class="form-label">Как часто вы интересуетесь темой космоса?</legend>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="frequency" id="often" value="often" required>
+                                    <label class="form-check-label" for="often">Постоянно, это моя страсть!</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="frequency" id="sometimes" value="sometimes">
+                                    <label class="form-check-label" for="sometimes">Иногда, когда появляется интересная новость</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="frequency" id="rarely" value="rarely">
+                                    <label class="form-check-label" for="rarely">Редко, но ваш сайт меня заинтересовал</label>
+                                </div>
+                            </fieldset>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Телефон:</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email:</label>
+                                <input type="email" id="email" name="email" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="date" class="form-label">Дата посещения сайта:</label>
+                                <input type="date" id="date" name="date" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="social" class="form-label">Ссылка на соц. сети:</label>
+                                <input type="url" id="social" name="social" class="form-control">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="comment" class="form-label">Комментарий:</label>
+                                <textarea id="comment" name="comment" rows="3" class="form-control"></textarea>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between">
+                                <button id = "reset" type="reset" class="btn btn-outline-danger">Сбросить</button>
+                                <button id = "submit" type="submit" class="btn btn-primary">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+     </article >
+        <!-- Подвал сайта -->
+        <footer class="bg-dark text-white py-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h3 class="h5">О сайте</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">История сайта</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Наша команда</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="h5">Правовая информация</h3>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Условия использования</a></li>
+                            <li><a href="#" class="text-white text-decoration-none">Авторские права</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</body>
+</html>
