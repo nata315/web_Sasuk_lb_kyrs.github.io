@@ -1,10 +1,9 @@
-function App2(){
+function PhotoCart(){
     return(
         <div className="cards-container">
         {/* Левая стрелка */}
        <div className="arrow">‹</div>
 
-        {/* Карточки */}
         <div className="cards-wrapper">
             {/* Карточка 1 */}
             <div className="card">
@@ -78,4 +77,4 @@ function App2(){
     )
 }
 
-export default App2 ;
+export default PhotoCart ;

@@ -1,17 +1,14 @@
 import React from 'react';
-import Initialized from './PhotoCart';
+import PhotoCart from './PhotoCart';
 
 
 class App extends React.Component{
     constructor(props){
         super(props);
-        this.state ={
+        this.state ={// состояние для поля по умолчанию в поисковой строке 
             SearchText : "Поиск..."
         }
-
-       // this.searchClick = this.searchClick.bind(this)
     }
-
     func_alert(text){
         alert(`Раздел ${text} недоступен`);
     }
@@ -95,7 +92,7 @@ class App extends React.Component{
                     <h2>Персонажи</h2>
                     
                     <div className="carousel">
-                        <Initialized />
+                        <PhotoCart />
                     </div>
                     
                 </div>
@@ -105,5 +102,5 @@ class App extends React.Component{
     }
 }
 
-export default App 
+export default App ;
 
