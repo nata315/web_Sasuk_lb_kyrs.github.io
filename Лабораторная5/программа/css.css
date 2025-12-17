@@ -1,0 +1,178 @@
+/* Основные стили для body */
+body {
+    max-width: 100%;
+    background-color: #c9d7e7;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.4;
+    padding-top: 100px; /* Добавляем отступ равный высоте хедера */
+}
+
+/* Фиксированный header - используем только класс Bootstrap */
+header.fixed-top {
+    background-color: #e2e2e2; /* Добавляем фон, чтобы контент не просвечивал */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Добавляем тень для визуального разделения */
+}
+header{
+    color:#000000 ;
+}
+
+/* Основной контент */
+main {
+    padding-top: 40px; /* Дополнительный отступ */
+}
+
+section{
+    scroll-margin-top: 130px;
+}
+
+article{
+    scroll-margin-top: 130px;
+}
+
+.article1{
+    display: none;
+    position:absolute;
+
+    background: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 1000;
+
+
+
+}
+.article2{
+    display: none;
+    position:absolute;
+
+    background: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 1000;
+
+
+    margin-left: 120px;
+
+}
+.article3{
+    display: none;
+    position:absolute;
+
+    background: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 150px;
+    z-index: 1000;
+
+    
+    margin-left: 240px;
+
+}
+
+#section2{
+    height: 500px;
+}
+#section5{
+    height: 200px;
+}
+
+aside{
+    width: 20%;
+    padding-left: 15px;
+    margin: 15px;
+    float: right;
+    font-style: italic;
+    background-color: rgb(119, 119, 119);
+    display:grid;
+
+}
+aside > button{
+    margin: 10px;
+    margin-top: 5px;
+}
+body > img{
+    height: 250px;
+}
+
+.logo{
+    opacity: 1;
+}
+
+.list-groupli{
+    text-align: none;
+}
+.list-group.active{
+    text-align: center;
+    color: aqua;
+}
+
+.changeSize{
+    text-align: center;
+}
+
+/* Всплывающие окна*/
+.window {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    body {
+        padding-top: 110px; /* Меньший отступ для мобильных */
+    }
+    
+    header.fixed-top {
+        height: auto; /* Автоматическая высота */
+        padding: 10px 0; /* Уменьшаем отступы */
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 500px) {
+    body {
+        padding-top: 200px; /* Меньший отступ для мобильных */
+    }
+    
+    header.fixed-top {
+        height: auto; /* Автоматическая высота */
+        padding: 10px 0; /* Уменьшаем отступы */
+    }
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 300px) {
+    body {
+        padding-top: 300px; /* Меньший отступ для мобильных */
+    }
+    
+    header.fixed-top {
+        height: auto; /* Автоматическая высота */
+        padding: 10px 0; /* Уменьшаем отступы */
+    }
+}

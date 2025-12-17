@@ -1,0 +1,47 @@
+body{
+    background-color: #46334F;
+}
+div{
+    background-color: #F2921D;
+}
+#year{
+   width: 30px;
+}
+td{
+    width: 30px;
+;}
+tr{
+height: 30px;}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.window {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #8082A6;
+            border: 1px solid #F2C230;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+}
+
+#note{
+    width: 400px;
+    height: 400px;
+}

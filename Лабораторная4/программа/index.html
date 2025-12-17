@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Записная книжка – органайзер</title>
+    
+   <!-- Подключение Bootstrap CSS -->
+    
+     <!-- Иконка сайта -->
+    <link rel="icon" href="" type="image/x-icon" type="image/x-icon">
+    
+    <!-- Подключение кастомных стилей -->
+    <link rel="stylesheet" href="4lb.css">
+   
+    <script src="4lb_js.js" defer></script>
+</head>
+<body>
+  	<div>
+    <table border="1" id="calendar">
+      <tr><th colspan="7">Календарь</th></tr>
+      <tr><td colspan="1"><button id="left"><-</button></td>
+      <td colspan="4" id="month">месяц</td>
+      <td colspan="1"><button id="right">-></button></td>
+      <td colspan="1"><input id="year" placeholder="2025"></td></tr>
+      <tr><td colspan="1">пн</td><td colspan="1" >вт</td><td colspan="1">ср</td><td colspan="1">чт</td><td colspan="1">пт</td><td colspan="1">сб</td><td colspan="1">вс</td></tr>
+      <tbody id="calendar-body">
+            <!-- Сюда будет вставляться календарь -->
+      </tbody>
+    </table>
+    <div id="overlay"></div>
+
+    <div class="window" id="popupDialog">
+      <h3 id="currentDate">Дата</h3>
+      <textarea id="note" placeholder="Планов нет"></textarea>
+      <button id="close-btn">закрыть</button>
+    </div>               
+  </div>
+
+</body>
